@@ -1,10 +1,7 @@
 {
   "functions": {
     "api/predict.py": {
-      "runtime": "@vercel/python"
+      "runtime": "python3.9"
     }
-  },
-  "rewrites": [
-    { "source": "/", "destination": "/aprobacion_de_creditos.html" }
-  ]
+  }
 }
