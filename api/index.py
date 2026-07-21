@@ -91,7 +91,7 @@ def calcular_prediccion(payload):
     }
 
 
-class handler(BaseHTTPRequestHandler):
+class Handler(BaseHTTPRequestHandler):
     def _send_json(self, status, body):
         payload = json.dumps(body, ensure_ascii=False).encode("utf-8")
         self.send_response(status)
@@ -122,4 +122,4 @@ class handler(BaseHTTPRequestHandler):
         # Ping simple para verificar que el endpoint está desplegado
         self._send_json(200, {"status": "ok", "mensaje": "Usar POST con los campos del formulario."})
         
-  handler = CreditHandler
+ handler = Handler
