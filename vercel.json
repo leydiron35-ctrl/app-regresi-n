@@ -1,0 +1,10 @@
+{
+  "functions": {
+    "api/predict.py": {
+      "runtime": "@vercel/python"
+    }
+  },
+  "rewrites": [
+    { "source": "/", "destination": "/aprobacion_de_creditos.html" }
+  ]
+}
