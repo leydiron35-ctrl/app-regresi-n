@@ -1,5 +1,7 @@
 {
   "functions": {
-    "api/predict.py": {}
+    "api/predict.py": {
+      "runtime": "python3.9"
+    }
   }
 }
