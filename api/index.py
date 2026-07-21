@@ -121,4 +121,5 @@ class handler(BaseHTTPRequestHandler):
     def do_GET(self):
         # Ping simple para verificar que el endpoint está desplegado
         self._send_json(200, {"status": "ok", "mensaje": "Usar POST con los campos del formulario."})
-        handler = CreditHandler
+        
+  handler = CreditHandler
